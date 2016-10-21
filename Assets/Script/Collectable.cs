@@ -18,7 +18,8 @@ public class Collectable : MonoBehaviour {
 		}
 
 			if(this.tag =="Emerald"){
-				// do ball size change
+				//ball size change
+				other.transform.localScale += new Vector3(-0.5f, -0.5f, -0.5f);
 				Destroy(this.gameObject);
 			}
 		}

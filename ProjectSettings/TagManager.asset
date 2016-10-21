@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Player
+  - Emerald
+  - Coin
   layers:
   - Default
   - TransparentFX
