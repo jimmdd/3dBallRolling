@@ -3,8 +3,13 @@ using System.Collections;
 
 public class Collectable : MonoBehaviour {
 	HUD hud;
-	void start(){
-		transform.RotateAround (transform.position, transform.up, Time.deltaTime * 90f);
+//	void start(){
+//		transform.RotateAround (transform.position, transform.up, Time.deltaTime * 90f);
+//	}
+
+	void update(){
+		//make the gameobject rotate itself
+		transform.Rotate(new Vector3(0,Time.deltaTime*50,0));
 	}
 
 	void OnTriggerEnter(Collider other){
@@ -18,9 +23,15 @@ public class Collectable : MonoBehaviour {
 		}
 
 			if(this.tag =="Emerald"){
-				//ball size change
+				//ball size change smaller
 				other.transform.localScale += new Vector3(-0.5f, -0.5f, -0.5f);
 				Destroy(this.gameObject);
+			}
+
+			if (this.tag == "Ruby") {
+				//ball size change bigger
+				other.transform.localScale += new Vector3 (0.5f, 0.5f, 0.5f);
+				Destroy (this.gameObject);
 			}
 		}
 	}
