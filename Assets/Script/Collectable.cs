@@ -3,9 +3,6 @@ using System.Collections;
 
 public class Collectable : MonoBehaviour {
 	HUD hud;
-	//	void start(){
-	//		transform.RotateAround (transform.position, transform.up, Time.deltaTime * 90f);
-	//	}
 
 	void update(){
 		//make the gameobject rotate itself
