@@ -19,7 +19,7 @@ public class Collectable : MonoBehaviour {
 			if(this.tag =="Emerald"){
 				//ball size change smaller
 				if (other.transform.localScale.x > .5f) {
-					other.GetComponent<PlayerController> ().jumpForce = 1200f;
+					other.GetComponent<PlayerController> ().jumpForce = 1400f;
 					other.transform.localScale += new Vector3 (-0.5f, -0.5f, -0.5f);
 					norotate.translate = -.51f;
 					Destroy (this.gameObject);
