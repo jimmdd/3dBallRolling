@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class norotate : MonoBehaviour {
 
+	public static float translate = -.51f;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -12,6 +14,6 @@ public class norotate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.position = GameObject.Find ("Player").transform.position;
-		transform.Translate (0,-.51f,0);
+		transform.Translate (0,translate,0);
 	}
 }
