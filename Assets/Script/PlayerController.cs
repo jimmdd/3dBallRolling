@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Update()
 	{
+		if (gameObject.transform.localPosition.y < GameManager.deathHeight)
+			die ();
 		grounded = Physics.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 		if (Input.GetKeyDown ("space") && grounded) {
 			jump = true;
@@ -48,5 +51,15 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
+	}
+
+	void die(){
+		mainCamera.transform.SetParent (null);
+		StartCoroutine(reload ());
+	}
+
+	IEnumerator reload(){
+		yield return new WaitForSeconds (2);
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 }

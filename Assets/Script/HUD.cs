@@ -39,7 +39,7 @@ public class HUD : MonoBehaviour {
 
 	//display score on GUI
 	void OnGUI(){
-		GUI.Label (new Rect (posX, posY, 100, 50), "Time Played: " + (int)playerScore, scoreStyle);
+		GUI.Label (new Rect (posX, posY, 100, 50), "Score: " + (int)playerScore, scoreStyle);
 	}
 
 }
