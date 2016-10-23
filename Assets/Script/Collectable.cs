@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 public class Collectable : MonoBehaviour {
 	HUD hud;
 
@@ -8,7 +7,6 @@ public class Collectable : MonoBehaviour {
 		//make the gameobject rotate itself
 		transform.Rotate(new Vector3(0,Time.deltaTime*50,0));
 	}
-
 	void OnTriggerEnter(Collider other){
 		if(other.tag =="Player"){
 			if (this.tag == "Coin" ) {
@@ -18,19 +16,19 @@ public class Collectable : MonoBehaviour {
 				hud.IncreaseScore (20);
 				Destroy (this.gameObject);
 			}
-
 			if(this.tag =="Emerald"){
 				//ball size change smaller
-				if (other.transform.localScale.x > 1.0f) {
+				if (other.transform.localScale.x > .5f) {
+					other.GetComponent<PlayerController> ().jumpForce = 1000f;
 					other.transform.localScale += new Vector3 (-0.5f, -0.5f, -0.5f);
 					norotate.translate = -.51f;
 					Destroy (this.gameObject);
 				}
 			}
-
 			if (this.tag == "Ruby") {
 				//ball size change bigger
-				if (other.transform.localScale.x < 1.5f) {
+				if (other.transform.localScale.x < 1f) {
+					other.GetComponent<PlayerController> ().jumpForce = 1600f;
 					other.transform.localScale += new Vector3 (0.5f, 0.5f, 0.5f);
 					norotate.translate = -1f;
 					Destroy (this.gameObject);
