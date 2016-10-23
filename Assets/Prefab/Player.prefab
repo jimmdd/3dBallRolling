@@ -9,21 +9,36 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
+<<<<<<< HEAD
   m_RootGameObject: {fileID: 1000013109775522}
   m_IsPrefabParent: 1
 --- !u!1 &1000013109775522
+=======
+  m_RootGameObject: {fileID: 1000011383100876}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011383100876
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 4: {fileID: 4000010300005142}
   - 33: {fileID: 33000010039318586}
   - 135: {fileID: 135000010825092202}
   - 23: {fileID: 23000010277900416}
   - 54: {fileID: 54000014124688746}
   - 114: {fileID: 114000014037922878}
+=======
+  - 4: {fileID: 4000014242369696}
+  - 33: {fileID: 33000011854942746}
+  - 135: {fileID: 135000012302584600}
+  - 23: {fileID: 23000012534709378}
+  - 54: {fileID: 54000012723030768}
+  - 114: {fileID: 114000010808984958}
+>>>>>>> origin/master
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31,12 +46,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4000010300005142
+=======
+--- !u!4 &4000014242369696
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
+=======
+  m_GameObject: {fileID: 1000011383100876}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -44,12 +67,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
 --- !u!23 &23000010277900416
+=======
+--- !u!23 &23000012534709378
+>>>>>>> origin/master
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
+=======
+  m_GameObject: {fileID: 1000011383100876}
+>>>>>>> origin/master
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +88,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: fd173854a9bc6214ea25dd5076506cce, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> origin/master
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -73,19 +108,33 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
 --- !u!33 &33000010039318586
+=======
+--- !u!33 &33000011854942746
+>>>>>>> origin/master
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &54000014124688746
+=======
+  m_GameObject: {fileID: 1000011383100876}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54000012723030768
+>>>>>>> origin/master
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
+=======
+  m_GameObject: {fileID: 1000011383100876}
+>>>>>>> origin/master
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -95,12 +144,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!114 &114000014037922878
+=======
+--- !u!114 &114000010808984958
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
+=======
+  m_GameObject: {fileID: 1000011383100876}
+>>>>>>> origin/master
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfb1470d4a91c4a38a2c7659408e04f0, type: 3}
@@ -112,12 +169,20 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   rotateSpeed: 5
   jump: 0
+<<<<<<< HEAD
 --- !u!135 &135000010825092202
+=======
+--- !u!135 &135000012302584600
+>>>>>>> origin/master
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1000013109775522}
+=======
+  m_GameObject: {fileID: 1000011383100876}
+>>>>>>> origin/master
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
